@@ -16,7 +16,7 @@ const ForgotPassword = () => {
         setMessage("");
 
         try {
-            const redirectUrl = `https://alignify-techno.netlify.app/auth/reset-password`;
+            const redirectUrl = `https://alignify-tech.netlify.app/auth/reset-password`;
 
             console.log("Attempting to send reset email to:", email);
             console.log("Using redirect URL:", redirectUrl);
