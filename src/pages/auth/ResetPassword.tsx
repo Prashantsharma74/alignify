@@ -156,7 +156,7 @@ const ResetPassword = () => {
 
     useEffect(() => {
         const hash = window.location.hash;
-        const params = new URLSearchParams(hash.replace("#", "?")); 
+        const params = new URLSearchParams(window.location.search);
         const accessToken = params.get("access_token");
         const refreshToken = params.get("refresh_token"); 
 
