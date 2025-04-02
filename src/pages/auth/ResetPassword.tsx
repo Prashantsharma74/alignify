@@ -164,7 +164,7 @@ const ResetPassword = () => {
             (async () => {
                 const { error } = await supabase.auth.setSession({
                     access_token: accessToken,
-                    refresh_token: refreshToken,
+                    refresh_token: refreshToken || "",
                 });
 
                 if (error) {
